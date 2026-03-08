@@ -1,1 +1,20 @@
 
+groups:
+  - name: node_recording
+    interval: 1m
+    rules:
+      - record: instance:node_cpu_utilisation:rate5m
+        expr: |
+          100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
+
+      - record: instance:node_memory_utilisation:ratio
+        expr: 1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)
+
+      - record: instance:node_disk_read_bytes:rate5m
+        expr: sum by(instance) (rate(node_disk_read_bytes_total[5m]))
+
+      - record: instance:node_disk_written_bytes:rate5m
+        expr: sum by(instance) (rate(node_disk_written_bytes_total[5m]))
+
+      - record: instance:node_network_receive_bytes:rate5m
+        expr: sum by(instance) (rate(node_network_receive_bytes_total{device!="lo"}[5m]))
