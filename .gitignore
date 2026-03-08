@@ -1,1 +1,26 @@
+# Docker volume data
+elasticsearch_data/
+prometheus_data/
+grafana_data/
 
+# Secrets / env files
+*.env
+.env*
+secrets/
+
+# Logs
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Backups
+*.bak
