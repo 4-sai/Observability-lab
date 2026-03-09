@@ -12,13 +12,13 @@ Each phase is self-contained, builds on the previous one, and produces real dash
 
 ## 📍 Roadmap
 
-| Phase | Tools | Status |
-|-------|-------|--------|
-| ✅ Phase 1 | Prometheus · Grafana · Alertmanager | Complete |
-| ⏳ Phase 2 | Elasticsearch · Kibana · Filebeat · Logstash | In Progress |
-| ⬜ Phase 3 | Jaeger · OpenTelemetry | Planned |
-| ⬜ Phase 4 | Kubernetes · Prometheus Operator | Planned |
-| ⬜ Phase 5 | Nagios Core | Planned |
+| Phase | Tools |
+|-------|-------|
+| ⬜ Phase 1 | Prometheus · Grafana · Alertmanager |
+| ⬜ Phase 2 | Elasticsearch · Kibana · Filebeat · Logstash |
+| ⬜ Phase 3 | Jaeger · OpenTelemetry |
+| ⬜ Phase 4 | Kubernetes · Prometheus Operator |
+| ⬜ Phase 5 | Nagios Core |
 
 ---
 
